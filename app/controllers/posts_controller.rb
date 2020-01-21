@@ -35,7 +35,6 @@ class PostsController < ApplicationController
 	private 
 	
 	def post_attr
-	  byebug
-	   params.require(:post).permit!
+	   params.permit!(:post).permit(:title, :description)
 	end
 end
