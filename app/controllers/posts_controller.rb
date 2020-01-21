@@ -35,6 +35,7 @@ class PostsController < ApplicationController
 	private 
 	
 	def post_attr
+	  byebug
 	   params.permit!(:post)
 	end
 end
