@@ -35,6 +35,6 @@ class PostsController < ApplicationController
 	private 
 	
 	def post_attr
-	   params.require(:post).permit(:title, :description)
+	   params.permit!(:post)
 	end
 end
